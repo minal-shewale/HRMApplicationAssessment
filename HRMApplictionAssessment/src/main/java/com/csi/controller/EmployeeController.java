@@ -28,6 +28,11 @@ public class EmployeeController {
     {
         return ResponseEntity.ok(employeeService.getDataByUsingAnyInput(employee));
     }
+    @GetMapping("/api")
+    public String sayHello()
+    {
+      return "WELCOME TO PUNE";
+    }
 
 
 }
